@@ -1,8 +1,8 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/carzone.png'
 import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
+import IMG3 from '../../assets/personal.png'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
@@ -11,23 +11,23 @@ const data = [
   {
     id:1,
     image:IMG1,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
+    title:'Car zone',
+    github:'https://github.com/dnp176/Carzon_Django_Project',
+    demo:'https://carzonpro.herokuapp.com/'
   },
   {
     id:2,
     image:IMG2,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
+    title:'Inventory Management',
+    github:'https://github.com/dnp176/GujaratAbrasive_tools',
+    demo:'#'
   },
   {
     id:3,
     image:IMG3,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
+    title:'Personal Website',
+    github:'https://github.com/dnp176/PersonalWebsite',
+    demo:'#'
   },
   {
     id:4,

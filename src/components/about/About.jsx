@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me2.jpeg'
+import ME from '../../assets/me.jpeg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
@@ -43,7 +43,7 @@ export const About = () => {
             </div>
         </div>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        We have 1.2+ year experience in software development. We have created multiple types of projects in multiple languages. Also we have experience in Core PHP, Laravel, Python, Django Framework, ReactJs, NodeJs, AngularJS, UI/UX, JavaScript, Html5, Css3, Bootstrap4 etc. We have use MySQL, MongoDB and PostgreSQL database. We have developed client base requirements applications.
         </p>
         <a href='#contact' className='btn btn-primary'>Let's Talk</a>
       </div>
