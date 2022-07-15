@@ -1,11 +1,9 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/carzone.png'
-import IMG2 from '../../assets/portfolio2.jpg'
+import IMG2 from '../../assets/carzone.png'
 import IMG3 from '../../assets/personal.png'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG4 from '../../assets/portfolio_react.png'
 
 const data = [
   {
@@ -32,32 +30,10 @@ const data = [
   {
     id:4,
     image:IMG4,
-    title:'Project Name',
+    title:'Personal Portfolio',
     github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
-  },
-  {
-    id:5,
-    image:IMG5,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
-  },
-  {
-    id:6,
-    image:IMG6,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
-  },
-  {
-    id:7,
-    image:IMG1,
-    title:'Project Name',
-    github:'#',
-    demo:'https://dribbble.com/shots/18644800-NFT-Marketplace-Website'
+    demo:'http://dnp-portfolio.herokuapp.com/'
   }
-
 ]
 
 export const Portfolio = () => {
