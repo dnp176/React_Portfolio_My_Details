@@ -9,6 +9,15 @@ import Technologies from './components/technologies/Technologies'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-227016277-4"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
+ReactGA.event({
+  category: 'User',
+  action: 'Created an Account'
+});
+
 export const App = () => {
   return (
     <>
