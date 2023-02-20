@@ -95,6 +95,20 @@ export const Experience = () => {
                 <small className='text-light'>Experienced</small>
               </div>
             </artical>
+            <artical className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Java</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </artical>
+            <artical className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Selenium Web Driver</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </artical>
           </div>
         </div>
       </div>

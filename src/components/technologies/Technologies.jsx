@@ -13,6 +13,10 @@ import IMG10 from '../../assets/programming/postgre.png'
 import IMG11 from '../../assets/programming/mysql.png'
 import IMG12 from '../../assets/programming/github.png'
 import IMG13 from '../../assets/programming/atom.png'
+import IMG14 from '../../assets/programming/java.png'
+import IMG15 from '../../assets/programming/data_science.png'
+import IMG16 from '../../assets/programming/opencv.png'
+import IMG17 from '../../assets/programming/selenium.png'
 
 const data = [
   {
@@ -66,7 +70,23 @@ const data = [
   {
     id:13,
     image:IMG13,
-  }
+  },
+  // {
+  //   id:14,
+  //   image:IMG14,
+  // },
+  // {
+  //   id:15,
+  //   image:IMG15,
+  // },
+  // {
+  //   id:16,
+  //   image:IMG16,
+  // },
+  // {
+  //   id:17,
+  //   image:IMG17,
+  // }
 ]
 
 export const Technologies = () => {
