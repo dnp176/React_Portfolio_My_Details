@@ -18,20 +18,20 @@ const data = [
     image:IMG2,
     title:'Inventory Management',
     github:'https://github.com/dnp176/GujaratAbrasive_tools',
-    demo:'#'
+    demo:'noopener'
   },
   {
     id:3,
     image:IMG3,
     title:'Personal Website',
     github:'https://github.com/dnp176/PersonalWebsite',
-    demo:'#'
+    demo:'noopener'
   },
   {
     id:4,
     image:IMG4,
     title:'Personal Portfolio',
-    github:'#',
+    github:'noopener',
     demo:'http://dnp176.herokuapp.com/'
   }
 ]
