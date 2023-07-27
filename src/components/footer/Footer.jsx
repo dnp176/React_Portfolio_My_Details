@@ -17,6 +17,9 @@ export const Footer = () => {
         <li><a href='#portfolio'>Portfolio</a></li>
         <li><a href='#technologies'>Technologies</a></li>
         <li><a href='#contact'>Contact</a></li>
+        <li><a href='https://mylinkstorage.netlify.app/' target='_blank'>Important Link</a></li>
+
+        
       </ul>
 
     <div className='footer__socials'>
