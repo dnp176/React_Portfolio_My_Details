@@ -13,7 +13,7 @@ import {useEffect } from 'react';
 // import ReactDOM from 'react-dom';
 // import ReactGA from 'react-ga';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-const TRACKING_ID = "G-F3P097DYC6"; // OUR_TRACKING_ID
+const TRACKING_ID = "UA-227016277-5"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 // import ReactDOM from 'react-dom';
