@@ -8,29 +8,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Technologies from './components/technologies/Technologies'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import ReactGA from 'react-ga';
-import {useEffect } from 'react';
-// import ReactDOM from 'react-dom';
-// import ReactGA from 'react-ga';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// const TRACKING_ID = "UA-227016277-5"; // OUR_TRACKING_ID
-const TRACKING_ID = "G-YEG17P7K6Z"; // OUR_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
-
-// import ReactDOM from 'react-dom';
-
-const useAnalyticsEventTracker = (category="Blog category") => {
-  const eventTracker = (action = "test action", label = "test label") => {
-    ReactGA.event({category, action, label});
-  }
-  return eventTracker;
-}
 
 export const App = () => {
-
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
   return (
     <>
       <Header />
@@ -45,4 +24,6 @@ export const App = () => {
     </>
   )
 }
+
+
 export default App
