@@ -1,6 +1,5 @@
 // import React from 'react'
 import './experience.css'
-import{BsPatchCheckFill} from 'react-icons/bs'
 import React, { useState, useEffect } from 'react';
 
 
