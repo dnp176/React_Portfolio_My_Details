@@ -1,116 +1,57 @@
-import React from 'react'
+// import React from 'react'
 import './experience.css'
 import{BsPatchCheckFill} from 'react-icons/bs'
+import React, { useState, useEffect } from 'react';
+
 
 export const Experience = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await fetch(
+                'https://api.github.com/repos/dnp176/AutomationMaterialCode/contents/experience.json'
+            );
+    
+            if (response.ok) {
+              const json = await response.json();
+              const content = atob(json.content); // Decode Base64-encoded content
+    
+              // Parse the JSON content
+              const jsonData = JSON.parse(content);
+    
+              if (Array.isArray(jsonData)) {
+                setData(jsonData);
+              }
+            }
+          } catch (error) {
+            console.error('Error:', error);
+          }
+        };
+    
+        fetchData();
+      }, []);
   return (
     <section id='experience'>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className='container experience__container'>
-        <div className='experience__frontend'>
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>ReactJs</h4>
-                <small className='text-light'>Experienced</small>
+      <div className="experience container" id="experience">
+          <div className="content-inner">
+              <div className="row align-items-center">
+                {data.map((item, index) => (
+                  <div className="col-md-6">
+                      <div className="exp-col">
+                          {/* <span> December-2022 <i>to</i> Present </span> */}
+                          <span>{item.period} </span>
+                          <h3>{item.company}</h3>
+                          <h5>{item.position}</h5>
+                          <p>{item.description}</p>
+                      </div>
+                  </div>
+                ))}
               </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>AngularJS</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Bootstrap4</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>HTML5</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>CSS3</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Javascript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
           </div>
-        </div>
-
-        <div className='experience__backendend'>
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Laravel Framework</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Core PHP</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Django Framework</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>NodeJs</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-            <artical className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Selenium Web Driver</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </artical>
-          </div>
-        </div>
       </div>
     </section>
   )
